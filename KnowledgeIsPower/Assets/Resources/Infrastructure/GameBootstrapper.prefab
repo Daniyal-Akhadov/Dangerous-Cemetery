@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2797032679983567817}
-  - component: {fileID: 2797032679983567818}
+  - component: {fileID: 1356702905002703145}
   m_Layer: 0
   m_Name: GameBootstrapper
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2797032679983567818
+--- !u!114 &1356702905002703145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +40,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2797032679983567816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aba90ad3e2054559b75afaa4a09b14b, type: 3}
+  m_Script: {fileID: 11500000, guid: 268d21cb2b741a948abb27b301854ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurtainPrefab: {fileID: 8713324141352661597, guid: 9999f750a9cb62f4e95f2b25c7f6aec2,
-    type: 3}

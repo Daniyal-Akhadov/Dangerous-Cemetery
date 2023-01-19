@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.5660378, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -90,7 +91,7 @@ GameObject:
   - component: {fileID: 8493594776518678521}
   - component: {fileID: 8493594776518678522}
   - component: {fileID: 8493594776518678407}
-  - component: {fileID: 8713324141352661597}
+  - component: {fileID: 5455396674941443780}
   m_Layer: 0
   m_Name: Curtain
   m_TagString: LoadingCurtain
@@ -151,16 +152,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!225 &8493594776518678407
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -170,10 +172,10 @@ CanvasGroup:
   m_GameObject: {fileID: 8493594776518678524}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &8713324141352661597
+--- !u!114 &5455396674941443780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,10 +184,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8493594776518678524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7409db1a02e4bbabecc708b3d224e6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 06a6897a25d64f5782b52774dd99e3b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Curtain: {fileID: 8493594777054932859}
+  _fadeInStep: 0.03
+  _canvasGroup: {fileID: 8493594776518678407}
 --- !u!1 &8493594777054932861
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +200,6 @@ GameObject:
   - component: {fileID: 8493594775791225260}
   - component: {fileID: 8493594777054932857}
   - component: {fileID: 8493594777054932858}
-  - component: {fileID: 8493594777054932859}
   m_Layer: 5
   m_Name: curtain
   m_TagString: Untagged
@@ -248,6 +250,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -262,15 +265,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!225 &8493594777054932859
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8493594777054932861}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
