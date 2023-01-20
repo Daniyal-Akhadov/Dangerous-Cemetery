@@ -1,5 +1,4 @@
 using System;
-using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.Hero
@@ -65,6 +64,7 @@ namespace CodeBase.Hero
         private AnimatorState StateFor(int stateHash)
         {
             AnimatorState state;
+
             if (stateHash == _idleStateHash)
             {
                 state = AnimatorState.Idle;

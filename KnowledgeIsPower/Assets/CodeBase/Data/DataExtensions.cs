@@ -19,5 +19,11 @@ namespace CodeBase.Data
         {
             return JsonUtility.ToJson(value);
         }
+
+        public static Vector3 AddY(this Vector3 vector, float value)
+        {
+            vector.y += value;
+            return vector;
+        }
     }
 }

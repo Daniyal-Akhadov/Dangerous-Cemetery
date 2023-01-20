@@ -48,7 +48,14 @@ namespace CodeBase.Infrastructure.States
                 new GameFactory(_services.Single<IAssetProvider>())
             );
             _services.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
-            _services.RegisterSingle<ISaveLoadService>(new SaveLoadService());
+            _services.RegisterSingle<ISaveLoadService>
+            (
+                new SaveLoadService
+                (
+                    _services.Single<IGameFactory>(),
+                    _services.Single<IPersistentProgressService>()
+                )
+            );
         }
 
         private static IInputService GetInputService()
