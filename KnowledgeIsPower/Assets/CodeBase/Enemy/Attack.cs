@@ -1,7 +1,8 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
+using CodeBase.Hero;
 using CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure.Services.Factory;
+using CodeBase.Utilities;
 using UnityEngine;
 
 namespace CodeBase.Enemy
@@ -13,6 +14,7 @@ namespace CodeBase.Enemy
         [SerializeField] private float _attackCooldown = 2f;
         [SerializeField] private float _overlapRadius = 1f;
         [SerializeField] private float _effectiveDistance = 0.5f;
+        [SerializeField] private float _damage = 5f;
 
         private IGameFactory _gameFactory;
         private Transform _heroTransform;
@@ -58,6 +60,7 @@ namespace CodeBase.Enemy
             if (Hit(out Collider hit))
             {
                 PhysicsDebug.DrawDebug(StartPoint, _overlapRadius, 2f);
+                hit.transform.GetComponent<HeroHealth>().TakeDamage(_damage);
             }
         }
 

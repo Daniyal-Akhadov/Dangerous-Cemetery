@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using CodeBase.Hero;
 using CodeBase.Infrastructure.Services.AssetManagement;
 using CodeBase.Infrastructure.Services.PersistentProgress;
+using CodeBase.UI;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.Services.Factory
@@ -29,8 +31,12 @@ namespace CodeBase.Infrastructure.Services.Factory
             return Hero;
         }
 
-        public GameObject CreateHud() =>
-            InstantiateRegistered(prefabPath: AssetsPath.HudPath);
+        public GameObject CreateHud()
+        {
+            GameObject hud = InstantiateRegistered(prefabPath: AssetsPath.HudPath);
+            hud.GetComponentInChildren<ActorUI>().Construct(Hero.GetComponentInChildren<HeroHealth>());
+            return hud;
+        }
 
         public void Cleanup()
         {

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using CodeBase.Utilities;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace CodeBase.Enemy
 {

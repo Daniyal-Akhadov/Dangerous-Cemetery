@@ -35,11 +35,11 @@ namespace CodeBase.Infrastructure.States
         {
         }
 
-        private void LoadProgressOrInitNew() => 
+        private void LoadProgressOrInitNew() =>
             _persistentProgressService.Progress =
                 _saveLoadService.LoadProgress() ?? CreateProgress();
 
         private static PlayerProgress CreateProgress() =>
-            new PlayerProgress(Main);
+            new PlayerProgress(Main, 50f);
     }
 }
