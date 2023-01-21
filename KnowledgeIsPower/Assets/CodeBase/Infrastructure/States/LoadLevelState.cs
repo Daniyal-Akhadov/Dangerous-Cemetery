@@ -9,6 +9,7 @@ namespace CodeBase.Infrastructure.States
     public class LoadLevelState : IPayloadState<string>
     {
         private const string InitialPointTag = "InitialPoint";
+        private const string EnemySpawnerTag = "EnemySpawner";
 
         private readonly GameStateMachine _gameStateMachine;
         private readonly SceneLoader _sceneLoader;
@@ -61,9 +62,19 @@ namespace CodeBase.Infrastructure.States
 
         private void InitialGameWorld()
         {
+            InitialSpawners();
             GameObject hero = _gameFactory.CreateHero(GameObject.FindWithTag(InitialPointTag));
             SetupCameraFollower(hero);
             _gameFactory.CreateHud();
+        }
+
+        private void InitialSpawners()
+        {
+            foreach (GameObject enemySpawner in GameObject.FindGameObjectsWithTag(EnemySpawnerTag))
+            {
+                EnemySpawner spawner = enemySpawner.GetComponent<EnemySpawner>();
+                _gameFactory.Register(spawner);
+            }
         }
 
         private static void SetupCameraFollower(GameObject target) =>

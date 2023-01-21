@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Plugins.SimpleInput.Scripts;
+using UnityEngine;
 
 namespace CodeBase.Infrastructure.Services.Input
 {

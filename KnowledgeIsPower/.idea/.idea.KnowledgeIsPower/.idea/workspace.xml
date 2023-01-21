@@ -2,28 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76ccbb23-7f53-4f34-9183-885f92b9c70f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/State.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/State.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroHealth.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroHealth.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/HealthBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/HealthBar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Utilities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/KillData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/KillData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/EnemySpawnerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/EnemySpawnerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/UniqueIdEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/UniqueIdEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyDeath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyDeath.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyHealth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyHealth.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/LootSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/LootSpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroAttack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroDeath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroDeath.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/IHealth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/IHealth.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/LookingAtCamera.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/LookingAtCamera.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/UniqueId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/UniqueId.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/IStaticDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/IStaticDataService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/MonsterStaticData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/MonsterStaticData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/EnemySpawner.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/EnemySpawner.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Prefabs/Golem.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Prefabs/Golem.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Levels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Levels/Graveyard.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Levels/Graveyard.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Golem.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Golem.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Lich.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Lich.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KnowledgeIsPower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KnowledgeIsPower/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Data/PlayerProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/PlayerProgress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Aggro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Aggro.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMovementToPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMovementToPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AttackRangeChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AttackRangeChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/PhysicsDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Utilities/PhysicsDebug.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/PhysicsDebug.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Utilities/PhysicsDebug.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/TriggerObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Utilities/TriggerObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/TriggerObserver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Utilities/TriggerObserver.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Factory/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Factory/IGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Factory/IGameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Input/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Input/InputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Input/MobileInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Input/MobileInputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Input/PCInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/Input/PCInputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/CFX2 Prefabs/Skull &amp; Ghosts Effects/CFX2_EnemyDeathSkull.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/CFX2 Prefabs/Skull &amp; Ghosts Effects/CFX2_EnemyDeathSkull.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_New.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_New.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDirectionTranslate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDirectionTranslate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/AxisInputDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/AxisInputDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/BaseInputDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/BaseInputDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/ButtonInputDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/ButtonInputDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/KeyInputDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/KeyInputDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/MouseButtonInputDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Editor/MouseButtonInputDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputKeyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputKeyboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputMouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputMoveGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputMoveGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputPinchGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputPinchGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputRotateGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputRotateGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputSwipeGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputSwipeGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputUIArrows.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputUIArrows.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/Dpad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/Dpad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/Joystick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/Joystick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/SteeringWheel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/SteeringWheel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/Touchpad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/Touchpad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/ButtonInputs/ButtonInputKeyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/ButtonInputs/ButtonInputKeyboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/ButtonInputs/ButtonInputSwipeGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/ButtonInputs/ButtonInputSwipeGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/ButtonInputs/ButtonInputUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/ButtonInputs/ButtonInputUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/BaseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/BaseInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/ISimpleInputDraggable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/ISimpleInputDraggable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/ISimpleInputDraggableMultiTouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/ISimpleInputDraggableMultiTouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/NonDrawingGraphic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/NonDrawingGraphic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SelectivePointerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SelectivePointerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SimpleInputDragListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SimpleInputDragListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SimpleInputMultiDragListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SimpleInputMultiDragListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SimpleInputUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SimpleInputUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SwipeGestureBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/SwipeGestureBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/UnityInputProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/Core/UnityInputProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/KeyInputs/KeyInputKeyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/KeyInputs/KeyInputKeyboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/KeyInputs/KeyInputSwipeGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/KeyInputs/KeyInputSwipeGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/KeyInputs/KeyInputUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/KeyInputs/KeyInputUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/MouseButtonInputs/MouseButtonInputKeyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/MouseButtonInputs/MouseButtonInputKeyboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/MouseButtonInputs/MouseButtonInputSwipeGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/MouseButtonInputs/MouseButtonInputSwipeGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/MouseButtonInputs/MouseButtonInputUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/MouseButtonInputs/MouseButtonInputUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/SimpleInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/SimpleInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/SimpleInputHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/SimpleInputHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Controls/Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Controls/Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/BaseEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/BaseEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/BaseEnemy.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/BaseEnemy.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Golem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Golem.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/SpawnMarker.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/SpawnMarker.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/SpawnPoint.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/SpawnPoint.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hero/CFX_Virus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hero/CFX_Virus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hero/hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hero/hero.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Hud/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hud/Hud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Loot/CFX3_MagicAura_D_Runic.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Loot/CFX3_MagicAura_D_Runic.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Loot/Loot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Loot/Loot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Levels.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Levels/Graveyard.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Levels/Graveyard.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Monsters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Monsters/Golem.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Monsters/Golem.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Monsters/Lich.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Static Data/Monsters/Lich.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +147,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/acc21e65c0ae4adf80ac80bfa5d3f60313dc00/7c/23c7d6a7/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/acc21e65c0ae4adf80ac80bfa5d3f60313dc00/a8/15f968b8/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Editor/Tools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,23 +160,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.20334621&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.20334621",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\daha\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\daha\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\daha\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\daha\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\daha\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\daha\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.43f1\Editor\Unity.exe" />
@@ -111,7 +226,7 @@
       <updated>1674046572227</updated>
       <workItem from="1674046577187" duration="45742000" />
       <workItem from="1674217585609" duration="11634000" />
-      <workItem from="1674240255907" duration="2867000" />
+      <workItem from="1674240255907" duration="27722000" />
     </task>
     <servers />
   </component>
@@ -121,6 +236,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

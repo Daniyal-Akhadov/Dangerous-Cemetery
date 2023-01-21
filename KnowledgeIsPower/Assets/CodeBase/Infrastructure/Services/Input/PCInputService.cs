@@ -20,7 +20,9 @@ namespace CodeBase.Infrastructure.Services.Input
             }
         }
 
-        public override bool IsAttackButtonDown() =>
-            UnityEngine.Input.GetMouseButtonDown(0);
+        public override bool IsAttackButtonDown()
+        {
+            return UnityEngine.Input.GetKeyDown(KeyCode.Space);
+        }
     }
 }

@@ -40,6 +40,6 @@ namespace CodeBase.Infrastructure.States
                 _saveLoadService.LoadProgress() ?? CreateProgress();
 
         private static PlayerProgress CreateProgress() =>
-            new PlayerProgress(Main, 50f);
+            new PlayerProgress(Main, 50f, 1f, 0.5f);
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using CodeBase.Hero;
+﻿using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.UI
@@ -8,22 +7,31 @@ namespace CodeBase.UI
     {
         [SerializeField] private HealthBar _healthBar;
 
-        private HeroHealth _heroHealth;
+        private IHealth _health;
 
-        public void Construct(HeroHealth heroHealth)
+        public void Construct(IHealth health)
         {
-            _heroHealth = heroHealth;
-            _heroHealth.Changed += OnHealthChanged;
+            _health = health;
+            _health.Changed += OnHealthChanged;
+        }
+
+        private void Start()
+        {
+            IHealth health = GetComponent<IHealth>();
+
+            if (health != null)
+                Construct(health);
         }
 
         private void OnDisable()
         {
-            _heroHealth.Changed -= OnHealthChanged;
+            if (_health != null)
+                _health.Changed -= OnHealthChanged;
         }
 
         private void OnHealthChanged()
         {
-            _healthBar.SetValue(_heroHealth.Current, _heroHealth.Max);
+            _healthBar.SetValue(_health.Current, _health.Max);
         }
     }
 }
